@@ -8,19 +8,70 @@
     <link rel="stylesheet" href="./styles/app.css" />
     <script src="./scripts/app.js" defer></script>
   </head>
-  <body class="bg-gray-900">
+  <body class="bg-gray-900 relative min-h-screen">
+    <svg class="hidden">
+      <symbol
+        id="bars3"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </symbol>
+      <symbol
+        id="x-mark"
+        xmlns="http://www.w3.org/2000/svg"
+        fill=""
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </symbol>
+      <symbol
+        id="question-mark-circle"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
+        />
+      </symbol>
+    </svg>
     <header class="py-10">
       <div class="container">
         <div class="flex items-center justify-between text-gray-50">
-          <div class="flex items-center gap-2 text-xl font-Rubik-Medium">
+          <div
+            class="flex items-center gap-1 lg:gap-2 text-xl font-Rubik-Medium"
+          >
             <div>
               <img src="./files/imgs/site-fav.png" alt="img" />
             </div>
             Zone.
           </div>
-          <div class="flex items-center gap-[60px] font-DMSans-Medium">
+          <div
+            class="hidden md:flex items-center gap-5 lg:gap-[60px] font-DMSans-Medium"
+          >
             <nav>
-              <ul class="flex items-center gap-[60px] text-base">
+              <ul class="flex items-center gap-5 lg:gap-[60px] text-base">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Service</a></li>
@@ -36,8 +87,43 @@
               >
             </div>
           </div>
+          <div class="md:hidden">
+            <div>
+              <svg id="hamburger-menu-open-btn" class="w-8 h-8 cursor-pointer">
+                <use href="#bars3"></use>
+              </svg>
+            </div>
+            <div
+              id="hamburger-menu"
+              class="absolute top-0 bottom-0 -right-[300px] h-screen w-[300px] p-5 bg-gradient-to-r from-blue-900 from-[77%] to-fuchsia-800 to-[201.02%] rounded-l-lg transition-all z-50"
+            >
+              <div class="flex justify-between items-center text-gray-50">
+                <svg id="hamburger-menu-close-btn" class="w-10 h-10">
+                  <use href="#x-mark"></use>
+                </svg>
+                <svg class="w-10 h-10">
+                  <use href="#question-mark-circle"></use>
+                </svg>
+              </div>
+              <hr class="my-4 bg-gray-50" />
+              <ul
+                class="flex flex-col gap-4 items-start child:font-DMSans-Medium child:before:content-[''] child:before:w-0 child:before:h-1 child:before:bg-yellow-500 child:before:top-0 child:before:bottom-0 child:before:left-0 child:before:my-auto child:before:rounded-sm child:before:absolute child:relative child-hover:before:w-2 child-hover:pl-2.5 child:transition-all"
+              >
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
+
+    <div
+      id="overlay"
+      class="hidden fixed top-0 left-0 bottom-0 right-0 z-40 w-full h-screen bg-slate-800/30"
+    ></div>
   </body>
 </html>
