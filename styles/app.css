@@ -742,6 +742,10 @@ body {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -772,6 +776,10 @@ body {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-10 {
@@ -957,6 +965,16 @@ body {
   padding-bottom: 1.25rem;
 }
 
+.px-\[14px\] {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.py-\[7px\] {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1005,8 +1023,17 @@ body {
   line-height: 1.75rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .leading-normal {
   line-height: 1.5;
+}
+
+.text-\[42ps\] {
+  color: 42ps;
 }
 
 .text-gray-200 {
@@ -1152,6 +1179,18 @@ body {
     width: 350px;
   }
 
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
   .lg\:justify-start {
     justify-content: flex-start;
   }
@@ -1164,8 +1203,17 @@ body {
     gap: 60px;
   }
 
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .lg\:text-start {
     text-align: start;
+  }
+
+  .lg\:text-\[42px\] {
+    font-size: 42px;
   }
 }
 
