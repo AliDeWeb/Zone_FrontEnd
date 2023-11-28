@@ -736,6 +736,18 @@ body {
   z-index: 50;
 }
 
+.order-3 {
+  order: 3;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -837,6 +849,10 @@ body {
   width: 100%;
 }
 
+.w-\[590px\] {
+  width: 590px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -855,6 +871,10 @@ body {
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-end {
@@ -1067,6 +1087,10 @@ body {
   line-height: 1.5;
 }
 
+.leading-6 {
+  line-height: 1.5rem;
+}
+
 .text-gray-200 {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
@@ -1198,6 +1222,14 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:order-last {
+    order: 9999;
+  }
+
+  .lg\:order-first {
+    order: -9999;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -1212,6 +1244,10 @@ body {
 
   .lg\:w-\[350px\] {
     width: 350px;
+  }
+
+  .lg\:w-\[590px\] {
+    width: 590px;
   }
 
   .lg\:flex-row {
@@ -1250,6 +1286,10 @@ body {
 
   .xl\:w-\[540px\] {
     width: 540px;
+  }
+
+  .xl\:w-\[590px\] {
+    width: 590px;
   }
 
   .xl\:py-10 {
