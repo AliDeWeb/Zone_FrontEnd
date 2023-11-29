@@ -1047,6 +1047,14 @@ body {
   gap: 30px;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
+.gap-\[54px\] {
+  gap: 54px;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1092,6 +1100,15 @@ body {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-\[969696\] {
+  background-color: 969696;
+}
+
+.bg-\[\#969696\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(150 150 150 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -1200,6 +1217,21 @@ body {
 .py-\[7px\] {
   padding-top: 7px;
   padding-bottom: 7px;
+}
+
+.py-\[\] {
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.py-\[35px\] {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pl-6 {
@@ -1412,6 +1444,14 @@ body {
     width: auto;
   }
 
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:gap-0 {
+    gap: 0px;
+  }
+
   .sm\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -1420,6 +1460,11 @@ body {
   .sm\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .sm\:py-\[35px\] {
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 
   .sm\:pl-0 {
